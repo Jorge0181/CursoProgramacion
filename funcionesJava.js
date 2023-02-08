@@ -34,7 +34,3 @@ function  infoDatos (ID) {
     
     document.getElementById("informacion").innerHTML = info;
 }
-
-function enviar () {
-    
-}

@@ -299,7 +299,7 @@ form textarea {
     margin: 5px;
 }
 
-form button {
+#btnEnviar {
     background-color: rgb(218, 219, 188);
     width: 100%;
     padding: 10px;
