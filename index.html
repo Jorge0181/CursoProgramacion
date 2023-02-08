@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilosCv.css">
+    <title>CV</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#hero"><img src="./Imagenes/iconos/pagina-de-inicio.png" alt="Inicio"><h3>Inicio</h3></a></li>
+                <li><a href="#personal-information"><img src="./Imagenes/iconos/usuario.png" alt="datos"><h3>Datos personales</h3></a></li>
+                <li><a href="#projects"><img src="./Imagenes/iconos/maletin.png" alt="Proyecto"><h3>Proyectos</h3></a></li>
+                <li><a href="#contact"><img src="./Imagenes/iconos/chat.png" alt="Contacto"><h3>Contacto</h3></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <!--img src="./imagenes/DesarrolloWeb.jpg" alt="arquitectura" id="img-portada"-->
+            <img src="./imagenes/71.jpg" alt="foto-perfil" id="foto-perfil">
+            <h1>Darren Campbell</h1>
+            <h2>Desarrollador web</h2>
+        </section>
+
+        <section id="personal-information">
+            
+            <div id="contenedor-iconos">
+                <div id="informacion">
+                    <p><!-- Informacion --></p>
+                </div>
+                <img src="./Imagenes/iconos/calendario.png" alt="fechaNacimiento" id="fechaNacimiento" onclick="infoDatos (this.id)">
+                <img src="./Imagenes/iconos/correo.png" alt="correo" id="correo" onclick="infoDatos (this.id)">
+                <img src="./Imagenes/iconos/llamada-telefonica.png" alt="telefono" id="telefono" onclick="infoDatos (this.id)">
+                <img src="./Imagenes/iconos/marcador-de-posicion.png" alt="direccion" id="direccion" onclick="infoDatos (this.id)">
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Proyectos realizados</h2>
+            <div id="projects-list">
+                <div id="project1" class="projects">
+                    <img src="./imagenes/proyecto1.jpg" alt="Imagen proyecto 1">
+                    <h3>Proyecto 1</h3>
+                    <p>Acá iria la descripcion del proyecto</p>
+                    <a href="https//:google.com">Proyecto1</a>
+                </div>
+                
+                <div id="project2" class="projects">
+                    <img src="./imagenes/proyecto2.jpg" alt="Imagen proyecto 2">
+                    <h3>Proyecto 2</h3>
+                    <p>Acá iria la descripcion del proyecto</p>
+                    <a href="https//:google.com">Proyecto2</a>
+                </div>
+                
+                <div id="project3" class="projects">
+                    <img src="./imagenes/proyecto3.jpg" alt="Imagen proyecto 3">
+                    <h3>Proyecto 3</h3>
+                    <p>Acá iria la descripcion del proyecto</p>
+                    <a href="https//:google.com">Proyecto3</a>
+                </div>
+                
+                <div id="project4" class="projects">
+                    <img src="./imagenes/proyecto4.jpg" alt="Imagen proyecto 4">
+                    <h3>Proyecto 4</h3>
+                    <p>Acá iria la descripcion del proyecto</p>
+                    <a href="https//:google.com">Proyecto4</a>
+                </div>
+                
+                <div id="project5" class="projects">
+                    <img src="./imagenes/proyecto5.jpg" alt="Imagen proyecto 5">
+                    <h3>Proyecto 5</h3>
+                    <p>Acá iria la descripcion del proyecto</p>
+                    <a href="https//:google.com">Proyecto5</a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <div>
+                <form action="Contacto" id="form-contacto"><h2>Datos de Contacto</h2></form>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre">
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" id="apellido">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email">
+                <label for="telefono">Telefono</label>
+                <input type="text" name="telefono" id="telefono">
+                <button>Enviar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="funcionesJava.js"></script>
+</body>
+</html>

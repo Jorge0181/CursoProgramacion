@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+}
+
+body {
+    width: 80%;
+    margin: 0 10%;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+@media (max-width: 580px) {
+    body {
+        width: 100%;
+        margin: 0%;
+    }
+}
+
+header {
+    background-color: rgb(9, 60, 128);
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/*****************************/
+/****** Seccion portada ******/
+/*****************************/
+
+nav ul {
+    height: 50px;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center; 
+}
+
+nav ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 20px;
+}
+
+
+/*****************************/
+/****** Seccion portada ******/
+/*****************************/
+
+section#portada{
+    background-image: linear-gradient(to bottom, rgb(0,0,0,.5), rgb(255,255,255,.5)), url("./Imagenes/DesarrolloWeb.jpg");
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#fotoPerfil {
+    position: relative;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+#infoPersonal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#portada h1, h2 {
+    text-shadow: 2px 2px 3px white;
+}
+
+
+
+/***********************************/
+/****** seccion info personal ******/
+/***********************************/
+
+/* Este es el estilo de la seccion donde aparecen los iconos y los datos*/
+#SeccionInfoPersonal {
+    background-color: rgb(255, 232, 158);
+   /* background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,232,158,1) 100%);*/
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#contenedor-iconos {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px;
+}
+
+
+/* Este es el estilo de los iconos de informacion personal */
+#contenedor-iconos img {
+    height: 45px;
+    width: auto;
+    margin-top: 10px;
+}
+
+/* Este es el estilo de la etiqueta p donde aparece la info al presionar los iconos*/
+#informacion {
+    /*color: black;
+    background-color: rgb(252, 253, 202);*/
+    display: none;
+    height: 20PX;
+    width: 300px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 2px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    /*
+    border: 2px double black;
+    -webkit-box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.2);
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.2);
+    */
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#fechaNacimiento:hover {
+    filter: invert(49%) sepia(15%) saturate(1105%) hue-rotate(108deg) brightness(96%) contrast(93%);
+    /*filter: invert(74%) sepia(70%) saturate(873%) hue-rotate(349deg) brightness(94%) contrast(111%);
+    */-webkit-filter: invert(49%) sepia(15%) saturate(1105%) hue-rotate(108deg) brightness(96%) contrast(93%);
+    -webkit-filter: invert(49%) sepia(15%) saturate(1105%) hue-rotate(108deg) brightness(96%) contrast(93%);
+}
+
+#correo:hover {
+    filter: invert(49%) sepia(15%) saturate(1105%) hue-rotate(108deg) brightness(96%) contrast(93%);
+    -webkit-filter: invert(49%) sepia(15%) saturate(1105%) hue-rotate(108deg) brightness(96%) contrast(93%);
+}
+
+#telefono:hover {
+    filter: invert(49%) sepia(15%) saturate(1105%) hue-rotate(108deg) brightness(96%) contrast(93%);
+    -webkit-filter: invert(49%) sepia(15%) saturate(1105%) hue-rotate(108deg) brightness(96%) contrast(93%);
+}
+
+#domicilio:hover {
+    filter: invert(49%) sepia(15%) saturate(1105%) hue-rotate(108deg) brightness(96%) contrast(93%);
+    -webkit-filter: invert(49%) sepia(15%) saturate(1105%) hue-rotate(108deg) brightness(96%) contrast(93%);
+}
+
+
+
+/*******************************/
+/****** Seccion proyectos ******/
+/*******************************/
+
+section#proyectos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#contenedor-proyectos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#proyectos h2 {
+    margin-bottom: 20px;
+}
+
+.proyecto {
+    margin: 20px;
+}
+
+.proyecto a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.imgProyecto {
+    height: 300px;
+    width: auto;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.info-proyecto {
+    display: none;
+    background-color: white;
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px black solid;
+    position: relative;
+    bottom: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.imgProyecto:hover ~.info-proyecto {
+    display: block;
+}
+
+.info-proyecto:hover {
+    display: block;
+}
+/******************************/
+/****** Seccion contacto ******/
+/******************************/
+
+section#contacto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contacto h2 {
+    margin: 20px;
+}
+
+#contenedor-form {
+    width: 400px;
+    background-color: rgb(255, 232, 158);
+    background: linear-gradient(to bottom, rgba(255,232,158,.7) 20%, rgba(255,232,158,1) 40%, rgba(129,112,58,1) 100%);
+    /*background-image: linear-gradient(to bottom, rgb(255, 232, 158,.5), rgb(255, 232, 158,.5), rgba(77, 68, 39, 0.7));
+    */margin: 20px 0 50px 0;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px rgb(133, 136, 104) solid;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-bottom: 100px;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    height: 20px;
+    background-color: rgb(240, 240, 240);
+    border: 2px rgb(133, 136, 104) solid;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    margin: 5px;
+}
+
+form textarea {
+    background-color: rgb(240, 240, 240);
+    border: 2px rgb(133, 136, 104) solid;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    margin: 5px;
+}
+
+form button {
+    background-color: rgb(218, 219, 188);
+    width: 100%;
+    padding: 10px;
+    border: 2px rgb(133, 136, 104) solid;
+    border-radius: 7px;
+    margin-top: 15px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+/******************************/
+/****** Pie de pagina ******/
+/******************************/
+
+footer {
+    color: white;
+    width: 100%;
+    /*background-image: url(./Imagenes/PieDePagina3.png);
+    /*background-image: url("./Imagenes/PieDePagina1.jpg");
+    */background-position: center;
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-position-x: -170px;
+    background-color: rgb(54, 54, 73);
+    background-image: linear-gradient(to bottom, rgba(202, 202, 207, 0.1) 50%, rgb(19, 19, 32, 1)), url(./Imagenes/PieDePagina3.png);
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
