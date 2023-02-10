@@ -4,100 +4,140 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilosCv.css">
+    <meta property="og:title" content="CV" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content=" http://www.example.com" />
+    <meta property="og:image" content=" http://example.com/image.jpg" />
+    <meta property="og:description" content="Este es un proyecto para el curso de programacion" />
+
+    <link rel="stylesheet" href="./estilos.css">
     <title>CV</title>
 </head>
-<body>
+<body id="inicio">
+    <!--------- Encabezado --------->
     <header>
         <nav>
             <ul>
-                <li><a href="#hero"><img src="./Imagenes/iconos/pagina-de-inicio.png" alt="Inicio"><h3>Inicio</h3></a></li>
-                <li><a href="#personal-information"><img src="./Imagenes/iconos/usuario.png" alt="datos"><h3>Datos personales</h3></a></li>
-                <li><a href="#projects"><img src="./Imagenes/iconos/maletin.png" alt="Proyecto"><h3>Proyectos</h3></a></li>
-                <li><a href="#contact"><img src="./Imagenes/iconos/chat.png" alt="Contacto"><h3>Contacto</h3></a></li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="hero">
-            <!--img src="./imagenes/DesarrolloWeb.jpg" alt="arquitectura" id="img-portada"-->
-            <img src="./imagenes/71.jpg" alt="foto-perfil" id="foto-perfil">
-            <h1>Darren Campbell</h1>
-            <h2>Desarrollador web</h2>
-        </section>
 
-        <section id="personal-information">
-            
+    <!--------- Seccion portada --------->
+        <section id="portada">
+            <div id="infoPersonal">
+                <img src="./Imagenes/71.jpg" alt="foto Perfil" id="fotoPerfil">
+                <h1>Darren Campball</h1>
+                <h2>Desarrollador web</h2>                
+            </div>
+        </section>
+        <hr>
+        <!--------- Seccion informacion personal --------->
+        <section id="SeccionInfoPersonal">
             <div id="contenedor-iconos">
-                <div id="informacion">
-                    <p><!-- Informacion --></p>
-                </div>
-                <img src="./Imagenes/iconos/calendario.png" alt="fechaNacimiento" id="fechaNacimiento" onclick="infoDatos (this.id)">
+                <img src="./Imagenes/iconos/calendario.png" alt="fechaNacimiento" id="fechaNacimiento" class="img1" onclick="infoDatos (this.id)">
                 <img src="./Imagenes/iconos/correo.png" alt="correo" id="correo" onclick="infoDatos (this.id)">
                 <img src="./Imagenes/iconos/llamada-telefonica.png" alt="telefono" id="telefono" onclick="infoDatos (this.id)">
-                <img src="./Imagenes/iconos/marcador-de-posicion.png" alt="direccion" id="direccion" onclick="infoDatos (this.id)">
+                <img src="./Imagenes/iconos/marcador-de-posicion.png" alt="domicilio" id="domicilio" onclick="infoDatos (this.id)">
+            </div>
+            
+            <div id="divInfo">
+                <p id="informacion"></p>
             </div>
         </section>
+        <hr>
+        <!--------- Seccion proyectos --------->
+        <section id="proyectos">
+            <h2><br>Proyectos realizados</h2>
+            <div id="contenedor-proyectos">
+                <!--------- Proyecto 1 --------->
+                <div class="proyecto">
+                    <img src="./Imagenes/Proyecto11.jpg" alt="proyecto1" class="imgProyecto">
+                    <div id="info-proyecto1" class="info-proyecto">
+                        <p>Acá iria la descripcion del proyecto en cuestion</p>
+                        <br>
+                        <p>Para visitar el sitio haz click <a href="https://www.google.com" target="_blank">aqui</a></p>
+                    </div>
+                </div>
+                
+                <!--------- Proyecto 2 --------->
+                <div class="proyecto">
+                    <img src="./Imagenes/Proyecto21.jpg" alt="proyecto2" class="imgProyecto">
+                    <div class="info-proyecto">
+                        <p>Acá iria la descripcion del proyecto en cuestion</p>
+                        <br>
+                        <p>Para visitar el sitio haz click <a href="https://www.google.com" target="_blank">aqui</a></p>
+                    </div>
+                </div>
 
-        <section id="projects">
-            <h2>Proyectos realizados</h2>
-            <div id="projects-list">
-                <div id="project1" class="projects">
-                    <img src="./imagenes/proyecto1.jpg" alt="Imagen proyecto 1">
-                    <h3>Proyecto 1</h3>
-                    <p>Acá iria la descripcion del proyecto</p>
-                    <a href="https//:google.com">Proyecto1</a>
+                <!--------- Proyecto 3 --------->
+                <div class="proyecto">
+                    <img src="./Imagenes/Proyecto31.jpg" alt="proyecto3" class="imgProyecto">
+                    <div class="info-proyecto">
+                        <p>Acá iria la descripcion del proyecto en cuestion</p>
+                        <br>
+                        <p>Para visitar el sitio haz click <a href="https://www.google.com" target="_blank">aqui</a></p>
+                    </div>
                 </div>
-                
-                <div id="project2" class="projects">
-                    <img src="./imagenes/proyecto2.jpg" alt="Imagen proyecto 2">
-                    <h3>Proyecto 2</h3>
-                    <p>Acá iria la descripcion del proyecto</p>
-                    <a href="https//:google.com">Proyecto2</a>
+
+                <!--------- Proyecto 4 --------->
+                <div class="proyecto">
+                    <img src="./Imagenes/Proyecto41.jpg" alt="proyecto4" class="imgProyecto">
+                    <div class="info-proyecto">
+                        <p>Acá iria la descripcion del proyecto en cuestion</p>
+                        <br>
+                        <p>Para visitar el sitio haz click <a href="https://www.google.com" target="_blank">aqui</a></p>
+                    </div>
                 </div>
-                
-                <div id="project3" class="projects">
-                    <img src="./imagenes/proyecto3.jpg" alt="Imagen proyecto 3">
-                    <h3>Proyecto 3</h3>
-                    <p>Acá iria la descripcion del proyecto</p>
-                    <a href="https//:google.com">Proyecto3</a>
-                </div>
-                
-                <div id="project4" class="projects">
-                    <img src="./imagenes/proyecto4.jpg" alt="Imagen proyecto 4">
-                    <h3>Proyecto 4</h3>
-                    <p>Acá iria la descripcion del proyecto</p>
-                    <a href="https//:google.com">Proyecto4</a>
-                </div>
-                
-                <div id="project5" class="projects">
-                    <img src="./imagenes/proyecto5.jpg" alt="Imagen proyecto 5">
-                    <h3>Proyecto 5</h3>
-                    <p>Acá iria la descripcion del proyecto</p>
-                    <a href="https//:google.com">Proyecto5</a>
+
+                <!--------- Proyecto 5 --------->
+                <div class="proyecto">
+                    <img src="./Imagenes/Proyecto51.jpg" alt="proyecto5" class="imgProyecto">
+                    <div class="info-proyecto">
+                        <p>Acá iria la descripcion del proyecto en cuestion</p>
+                        <br>
+                        <p>Para visitar el sitio haz click <a href="https://www.google.com" target="_blank">aqui</a></p>
+                    </div>
                 </div>
             </div>
         </section>
-        
-        <section id="contact">
-            <div>
-                <form action="Contacto" id="form-contacto"><h2>Datos de Contacto</h2></form>
-                <label for="nombre">Nombre</label>
-                <input type="text" name="nombre" id="nombre">
-                <label for="apellido">Apellido</label>
-                <input type="text" name="apellido" id="apellido">
-                <label for="email">E-mail</label>
-                <input type="email" name="email" id="email">
-                <label for="telefono">Telefono</label>
-                <input type="text" name="telefono" id="telefono">
-                <button>Enviar</button>
+        <hr>
+        <!--------- Seccion contacto --------->
+        <section id="contacto">
+            <h2><br>Contáctame</h2>
+            <div id="contenedor-mensaje">
+                <p id="mensajeForm">Aca van los mensajes</p>
+            </div>
+            <div id="contenedor-form">
+                <form action="">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" required>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" required>
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" required>
+                    <label for="numTelefono">Telefono</label>
+                    <input type="tel" id="numTelefono" required>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" required></textarea>
+                    
+                </form>
+                <button id="btnEnviar">Enviar</button>
             </div>
         </section>
     </main>
-    <footer>
 
+    <!--------- Pie de pagina --------->
+    <hr>
+    <footer>
+        <div>
+            <p>Acá iria el pie de pagina</p>
+        </div>
     </footer>
 
-    <script src="funcionesJava.js"></script>
+    <script src="./funcionesJava.js"></script>
 </body>
 </html>

@@ -254,6 +254,22 @@ section#contacto {
     margin: 20px;
 }
 
+#contenedor-mensaje {
+    display: none;
+    color:whitesmoke;
+    text-shadow: 2px 2px 3px black;
+    padding: 50px;
+    background-image: linear-gradient(to bottom, rgb(33, 46, 122), rgb(120, 120, 145) 100%);
+    border: 2px black solid;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    position: relative;
+    top: 300px;
+}
+
 #contenedor-form {
     width: 400px;
     background-color: rgb(255, 232, 158);
