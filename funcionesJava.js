@@ -6,7 +6,7 @@ let idAnterior = "";
 
 // Funcion que se usa para mostrar los datos personales en la seccion de informacion personal 
 function  infoDatos (ID) {
-    let mensaje = {fechaNacimiento:"Fecha de nacimiento: 25/05/1810", correo:"E-mail: darren@gmail.com",telefono: "Telefono: (11) 6321-7777", domicilio:"Domicilio: Calle falsa 1234"};
+    let mensaje = {fechaNacimiento:"Fecha de nacimiento: 25/05/1810", correo:"E-mail: darren@gmail.com",telefono: "Telefono: (11) 5555-7777", domicilio:"Domicilio: Calle falsa 1234"};
     let info = mensaje[ID];
     console.log(info);
  
