@@ -15,10 +15,23 @@ h2 {
     font-size: 2rem;
 }
 
-@media (max-width: 580px) {
+@media (max-width: 650px) {
     body {
         width: 100%;
         margin: 0%;
+    }
+
+    .proyecto {
+        margin: 20px 5px;
+    }
+
+    .imgProyecto {
+        height: auto;
+        width: 90%;
+    }
+
+    .info-proyecto {
+        display: block;
     }
 }
 
@@ -140,11 +153,6 @@ section#portada{
     margin-bottom: 20px;
     justify-content: center;
     align-items: center;
-    /*
-    border: 2px double black;
-    -webkit-box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.2);
-    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.2);
-    */
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
@@ -198,6 +206,7 @@ section#proyectos {
 }
 
 .proyecto {
+    width: 500px;
     margin: 20px;
 }
 
@@ -208,8 +217,8 @@ section#proyectos {
 }
 
 .imgProyecto {
-    height: 300px;
-    width: auto;
+    height: auto;
+    width: 100%;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -218,6 +227,7 @@ section#proyectos {
 }
 
 .info-proyecto {
+    width: 90%;
     display: none;
     background-color: white;
     height: auto;
@@ -349,3 +359,12 @@ footer {
     align-items: center;
 }
 
+footer h3 {
+    text-align: center;
+    text-shadow: 2px 2px 3px black
+}
+
+.iconos-redes {
+    width: 50px;
+    margin: 5px;
+}

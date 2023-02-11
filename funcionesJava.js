@@ -30,7 +30,6 @@ document.addEventListener("click", function(e) {
     let mensaje = "";
     let cont=document.getElementById("contenedor-mensaje");
     let targ = e.target;
-    console.log(e);
     
     if(cont.style.display == "block" && targ != document.getElementById("btnEnviar")) {
         console.log("oculta");
